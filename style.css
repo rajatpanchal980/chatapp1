@@ -1,0 +1,165 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(125, 122, 130);
+  height: 100vh;
+}
+
+/* User Info Modal */
+.user-info-modal {
+  position: fixed;
+  inset: 0;
+  background-color:rgb(88, 83, 109);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  padding: 1em;
+  background: #211a2d;
+  border-radius: 0.5em;
+  color: #fff;
+  box-shadow: 0 0 0.5em rgba(111, 82, 198, 0.2);
+  margin: 1em;
+}
+
+.user-info-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info-form input {
+  margin-bottom: 1em;
+  padding: 0.75em;
+  border: 0.0625em solid #38444d;
+  background: #d7e2c0;
+  border-radius: 0.5em;
+  color: black;
+  font-weight: 600;
+}
+
+.user-info-form input::placeholder {
+  color: #0b0204b3;
+}
+
+/* Button */
+.join-button {
+  padding: 0.75em;
+  border-radius: 0.5em;
+  background: hsl(196, 67%, 86%);
+  color:rgb(6, 21, 42);
+  cursor: pointer;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.button {
+  border: none;
+  padding: 0.625em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.button:hover {
+  filter: brightness(0.9);
+}
+
+.button:active {
+  transform: translateY(2px);
+}
+
+.chat-container {
+  background: rgb(6, 54, 70);
+  border-radius: 0.5em;
+  padding: 0.5em 1.25em;
+  margin: auto;
+  max-width: 37.5em;
+  height: 37.5em;
+  box-shadow: 0 0 1.25em 0.5em #6f51cb33;
+}
+
+.chat-header {
+  margin-bottom: 1em;
+  color: #eae5e5;
+}
+
+.chat-header h2 {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.chat-messages {
+  height: 23em;
+  overflow-y: scroll;
+}
+
+.chat-messages::-webkit-scrollbar {
+  display: none;
+}
+
+.message {
+  padding: 0.625em;
+  margin-right: 10em;
+  border-radius: 5px;
+  margin-bottom: 0.625em;
+  display: flex;
+  flex-direction:column;
+  color: black;
+}
+
+.message-sender {
+  font-weight: bold;
+  margin-bottom: 0.31em;
+}
+
+.message-text {
+  font-size: 1em;
+  margin-bottom: 0.31em;
+  word-wrap: break-word;
+}
+
+.message-timestamp {
+  font-size: 0.75em;
+  text-align: right;
+}
+
+.blue-bg {
+  background-color: white;
+}
+
+.gray-bg {
+  background-color: #2f7981;
+  color: white;
+}
+
+.chat-input-form {
+  display: flex;
+  align-items: center;
+  margin-top: 2em;
+  gap: 0.625em;
+}
+
+.chat-input {
+  padding: 0.625em;
+  border: none;
+  border-radius: 0.5em;
+  background-color: #f5f5f5;
+  color: #110202;
+  font-size: 1em;
+  flex-grow: 1;
+  font-weight: 700;
+}
+
+.send-button {
+  background-color:rgb(80, 91, 98);
+  color:whitesmoke;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.clear-chat-button {
+  display: block;
+  margin: 2.5em auto;
+  background-color: rgb(251, 246, 244);
+}
