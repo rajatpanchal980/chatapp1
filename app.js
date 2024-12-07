@@ -1,7 +1,7 @@
 // @ts-nocheck
 
 // Create a WebSocket connection
-const ws = new WebSocket('ws://localhost:3000/server')
+const ws = new WebSocket('ws://chatapp1-8hkv.onrender.com')
 
 ws.onmessage = (event) => {
   console.log('Message received from server')
